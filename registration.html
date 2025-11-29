@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Sidcup Family Golf</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+
+<body class="auth-body">
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-brand">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Family Golf Logo" />
+                <h1>FAMILY<br>GOLF</h1>
+            </div>
+            <div class="auth-tagline">
+                <h2>JOIN THE CLUB</h2>
+                <p>Create your account and start your golfing journey with us. Fun for the whole family awaits!</p>
+            </div>
+            <div class="auth-decorations">
+                <div class="deco-circle"></div>
+                <div class="deco-circle"></div>
+                <div class="deco-circle"></div>
+            </div>
+        </div>
+
+        <div class="auth-right">
+            <div class="auth-form-container register-form-container">
+                <div class="auth-header">
+                    <h2>Create Account</h2>
+                    <p>Join Sidcup Family Golf today</p>
+                </div>
+
+                <form id="register-form" class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <div class="input-wrapper">
+                                <i class="ri-user-line"></i>
+                                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-wrapper">
+                                <i class="ri-mail-line"></i>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-wrapper">
+                                <i class="ri-phone-line"></i>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age-group">Age Group</label>
+                            <div class="input-wrapper select-wrapper">
+                                <i class="ri-group-line"></i>
+                                <select id="age-group" name="age-group" required>
+                                    <option value="" disabled selected>Select age group</option>
+                                    <option value="adult">Adult (18+)</option>
+                                    <option value="teen">Teen (13-17)</option>
+                                    <option value="junior">Junior (Under 13)</option>
+                                    <option value="family">Family Package</option>
+                                </select>
+                                <i class="ri-arrow-down-s-line select-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="input-wrapper">
+                                <i class="ri-lock-line"></i>
+                                <input type="password" id="password" name="password" placeholder="Create password" required />
+                                <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                    <i class="ri-eye-line"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <div class="input-wrapper">
+                                <i class="ri-lock-line"></i>
+                                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required />
+                                <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                    <i class="ri-eye-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-checkboxes">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="terms" name="terms" required />
+                            <span class="checkmark"></span>
+                            <span class="checkbox-label">I agree to the <a href="#">Terms & Privacy Policy</a></span>
+                        </label>
+
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" id="subscribe" name="subscribe" />
+                            <span class="checkmark"></span>
+                            <span class="checkbox-label">Subscribe to offers and updates</span>
+                        </label>
+                    </div>
+
+                    <div class="error-message" id="register-error">
+                        <i class="ri-error-warning-line"></i>
+                        <span>Error message here</span>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <span>Create Account</span>
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html">Sign In</a></p>
+                </div>
+
+                <a href="index.html" class="back-home">
+                    <i class="ri-arrow-left-line"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+
+</html>
+
